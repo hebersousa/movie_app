@@ -44,8 +44,10 @@ class _MovieDetailState extends State<MovieDetailScreen>{
     );
 
 
+    var ano =  widget.movie.release_date;
+    if(ano.isNotEmpty)  ano = "(${widget.movie.release_date.substring(0,4)})";
 
-    var titulo = Text("${widget.movie.title} (${widget.movie.release_date.substring(0,4)})",
+    var titulo = Text("${widget.movie.title} $ano",
                       style: TextStyle(color: Colors.white, fontSize: 30.0),
     );
 
@@ -56,7 +58,7 @@ class _MovieDetailState extends State<MovieDetailScreen>{
           new Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text("${widget.movie.vote_average}",style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold ),),
-              Image.network('https://image.tmdb.org/t/p/w92'+widget.movie.poster_path),
+              widget.movie.poster_path == null ? Icon(Icons.movie) : Image.network('https://image.tmdb.org/t/p/w92'+widget.movie.poster_path),
             ],
           ),
           SizedBox(height: 10.0,),
@@ -84,10 +86,11 @@ class _MovieDetailState extends State<MovieDetailScreen>{
 
 
     return new Scaffold(
+      backgroundColor: Theme.of(context).cardColor,
       body: Stack(
         children: [
           imagemFundo,
-          Positioned.fill(child: new Opacity(opacity:0.5,child: Container(color: Colors.black, padding: const EdgeInsets.all(10.0)))),
+          Opacity(opacity:0.5,child: Container(color: Theme.of(context).primaryColor, padding: const EdgeInsets.all(10.0))),
 
           new SingleChildScrollView(
             child: new Padding(
