@@ -1,8 +1,11 @@
 # movie_app
 
 Movie App
+Application developed in Flutter to consume a RESTful API.
+In this example we use the MovieDB API.
+The documentation you can find at https://developers.themoviedb.org/3
 
-![alt text](https://lh3.googleusercontent.com/0WZ1fBEX4zasyeTUxUgHsmij189IwDoIZYRwD6h3Wf_31z51lOuBQEoubYE_lFl9HCiEx9oVBoM=w328-h253-no)
+![alt text](https://lh3.googleusercontent.com/rOWH_imxBUK9pURnFmNZAF-nD9-6njOvOoUi5i5iEXLvjY0O1Qr6fyqaMxQ42OSGVb2Yv2YPt7ZN0qlNII7-ZVrfVNO6i0ZOvmkpm1TDDbpTDXozLe8vTMiOSvQ7yIeYBMFwJHJ6iyE7I01INboFJl3GEDfLvKGBmvFZx7a_2V_C_k08H1FFjZFmwv1T3ybYsE4fGtEqZWy_jO4bhvAb0EjVjhLVjhYFAnmNJkW8Yqc4mjgJyMkZXajOa1nqPJrIEn2QTjPXZ97WM0d2fmGNxqE0yE2Xg1j4srbaZ_9xblWCJHB-m2iAIbmPulp8VyFW_BSj1pcxjoQWeAh3XxZiu1S-hcdz79fKYwNMtFce8ZOIA85PvtGII1ebnJAfym7EfC__YMNc18vBEbUr1Bbk2tyMGe2lHCgl0MqBeHUiPnUo77dqKf_v3kAw_Q82cp6RrWoDe4hgeAnpxWjjbaVJcs9v2PYZj7XRgnso-BXCd1taKT2za3HsMpa0eSq_4teOv0yDuXTTZkZxYYrMMNo20VPHqdWzIJ6MtQtRQJUgRi8P1gDvl1WGh3lkCjO1xdYDVibTiumj0CiC0eRIY0zk4nQvwhRLVQT0mcU_f-n1cy-HFxFPJ-7JeNFNsUxeJjku=w791-h611-no)
 
 
 
