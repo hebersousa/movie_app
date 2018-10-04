@@ -12,6 +12,8 @@ The documentation you can find at https://developers.themoviedb.org/3
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+## Settings
 
+Before running configure the API_KEY in "api_key.dart" file
 
 
