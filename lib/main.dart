@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       title: "Movie App",
       theme: ThemeData(
-          primarySwatch: Colors.blueGrey
+          primarySwatch: Colors.brown
       ),
       home: MovieScreen(),
 

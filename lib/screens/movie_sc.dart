@@ -107,6 +107,7 @@ TextEditingController txtController = TextEditingController();
       );
 
       return Scaffold(
+        backgroundColor: Theme.of(context).primaryColorLight,
         appBar: titleApp,
         body: Column( children: [
 
@@ -147,9 +148,10 @@ TextEditingController txtController = TextEditingController();
        return new Column(
          children: <Widget>[
            ListTile(
-            title:Text(movie.title),
+            title:Text(movie.title, style: TextStyle(color: Theme.of(context).accentColor)),
             leading: CachedNetworkImage(imageUrl: "https://image.tmdb.org/t/p/w92${movie.poster_path}",
               placeholder: Icon(Icons.movie_creation),
+              height: 60.0,
             ),
             onTap: (){
               Navigator.of(context).push(
