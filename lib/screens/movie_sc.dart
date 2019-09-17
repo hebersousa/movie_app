@@ -150,8 +150,11 @@ TextEditingController txtController = TextEditingController();
            ListTile(
             title:Text(movie.title, style: TextStyle(color: Theme.of(context).accentColor)),
             leading: CachedNetworkImage(imageUrl: "https://image.tmdb.org/t/p/w92${movie.poster_path}",
-              placeholder: Icon(Icons.movie_creation),
-              height: 60.0,
+
+
+              width: 60.0,
+
+                placeholder: (context, url) => Icon(Icons.movie_creation),
             ),
             onTap: (){
               Navigator.of(context).push(
@@ -168,9 +171,8 @@ TextEditingController txtController = TextEditingController();
        );
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
 
 }
+
+
+
